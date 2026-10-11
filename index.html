@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School DxD Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <div id="home-view" class="view-section">
+        <h1>Gundam Quiz</h1>
+        <p>Uji pengetahuanmu tentang dunia DxD</p>
+        <button id="startBtn" class="primary-btn">Mulai Kuis</button>
+        <button id="historyBtn" class="secondary-btn">Riwayat Skor</button>
+    </div>
+
+    <div id="quiz-view" class="view-section hidden">
+        <div class="header-quiz">
+            <div id="progress">Soal 1/10</div>
+            <div id="timer-display">Waktu: <span id="time">15</span>s</div>
+        </div>
+        <h3 id="question"></h3>
+        <div id="options" class="options-grid"></div>
+        <button id="nextBtn" class="primary-btn hidden">Next &rarr;</button>
+    </div>
+
+    <div id="result-view" class="view-section hidden">
+        <h2>Kuis Selesai!</h2>
+        <h3>Skor Anda: <span id="score"></span></h3>
+        <p>Akurasi: <span id="accuracy"></span>%</p>
+        <button id="backHomeBtn" class="primary-btn">Kembali ke Beranda</button>
+    </div>
+>
+    <div id="history-view" class="view-section hidden">
+        <h2>Riwayat Skor</h2>
+        <ul id="historyList" class="history-list"></ul>
+        <button id="closeHistoryBtn" class="secondary-btn">Kembali</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
